@@ -116,6 +116,7 @@ class Exempel extends JFrame {
         mainBottom.add(show);
         show.addActionListener(new boxListen2());
         mainBottom.add(crash);
+        crash.addActionListener(new stockExchangeCrashButton());
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(400, 300);
@@ -457,6 +458,32 @@ class Exempel extends JFrame {
                 addValuable();
             } else if (event.getSource() == ok) {
 
+            }
+        }
+    }
+
+//    class stockExchangeCrashButton implements ActionListener {
+//        public void actionPerformed(ActionEvent event) {
+//            if (event.getSource() == crash) {
+//                for(int i = 0;i<= valuables.size(); i++){
+//                    if (valuables.get(i) instanceof Stock) {
+//                        System.out.println("YES");
+//                        Stock stock = new Stock(valuables.get(i).getName(), ((Stock) valuables.get(i)).getQuantity(), 0.0);
+//                        valuables.set(i, stock);
+//                    }
+//                }
+//            }
+//        }
+//    }
+
+    class stockExchangeCrashButton implements ActionListener {
+        public void actionPerformed(ActionEvent event) {
+            if (event.getSource() == crash) {
+                for(Valuable v : valuables){
+                    if (v instanceof Stock) {
+                        ((Stock) v).setPrice(0.0);
+                    }
+                }
             }
         }
     }
