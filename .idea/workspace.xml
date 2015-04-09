@@ -20,16 +20,21 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DockManager">
-    <window id="1">
+    <window id="2">
       <content type="file-editors">
         <state>
           <leaf>
             <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/programmering2/wtvr/App.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.33276597">
-                    <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-                    <folding />
+                  <state vertical-scroll-proportion="0.029787235">
+                    <caret line="85" column="71" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+                    <folding>
+                      <element signature="e#2652#2982#0" expanded="true" />
+                      <element signature="e#2981#2982#0" expanded="true" />
+                      <element signature="e#3174#3363#0" expanded="true" />
+                      <element signature="e#3362#3363#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -48,14 +53,20 @@
       <file leaf-file-name="Exempel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79126877">
-              <caret line="483" column="50" selection-start-line="483" selection-start-column="50" selection-end-line="483" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.7131682">
+              <caret line="477" column="60" selection-start-line="477" selection-start-column="60" selection-end-line="477" selection-end-column="60" />
               <folding>
-                <element signature="e#1515#1525#0" expanded="true" />
-                <element signature="e#6587#6588#0" expanded="true" />
-                <element signature="e#6626#6627#0" expanded="true" />
-                <element signature="e#15594#15595#0" expanded="true" />
-                <element signature="e#15623#15624#0" expanded="true" />
+                <element signature="e#1574#1584#0" expanded="true" />
+                <element signature="e#6551#6552#0" expanded="true" />
+                <element signature="e#6590#6591#0" expanded="true" />
+                <element signature="e#9645#9646#0" expanded="true" />
+                <element signature="e#9684#9685#0" expanded="true" />
+                <element signature="class#13993:14408" expanded="false" />
+                <element signature="method#compare#0;class#13993:14408" expanded="false" />
+                <element signature="class#16387:16766" expanded="false" />
+                <element signature="method#compare#0;class#16387:16766" expanded="false" />
+                <element signature="e#16843#16844#0" expanded="true" />
+                <element signature="e#16872#16873#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,6 +242,116 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/programmering2/Exempel.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Exempel">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -508,7 +629,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428596327457</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="har fixat börskraschknappen. funkar bra för mig.">
+      <created>1428597992826</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1428597992826</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -560,7 +687,8 @@
     <MESSAGE value="la till objekt och raderar listan varje gång man klickar på &quot;visa&quot; innan det skriver ut listan." />
     <MESSAGE value="raderat klasserna." />
     <MESSAGE value="pushar igen. det enda jag får är warnings, inga fel." />
-    <option name="LAST_COMMIT_MESSAGE" value="pushar igen. det enda jag får är warnings, inga fel." />
+    <MESSAGE value="har fixat börskraschknappen. funkar bra för mig." />
+    <option name="LAST_COMMIT_MESSAGE" value="har fixat börskraschknappen. funkar bra för mig." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -576,11 +704,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,11 +724,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,11 +744,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,11 +772,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,11 +807,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,11 +842,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,11 +877,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -740,14 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="111" selection-start-line="29" selection-start-column="111" selection-end-line="29" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/programmering2/wtvr/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33276597">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -771,16 +933,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/programmering2/wtvr/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029787235">
+          <caret line="85" column="71" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+          <folding>
+            <element signature="e#2652#2982#0" expanded="true" />
+            <element signature="e#2981#2982#0" expanded="true" />
+            <element signature="e#3174#3363#0" expanded="true" />
+            <element signature="e#3362#3363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79126877">
-          <caret line="483" column="50" selection-start-line="483" selection-start-column="50" selection-end-line="483" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.7131682">
+          <caret line="477" column="60" selection-start-line="477" selection-start-column="60" selection-end-line="477" selection-end-column="60" />
           <folding>
-            <element signature="e#1515#1525#0" expanded="true" />
-            <element signature="e#6587#6588#0" expanded="true" />
-            <element signature="e#6626#6627#0" expanded="true" />
-            <element signature="e#15594#15595#0" expanded="true" />
-            <element signature="e#15623#15624#0" expanded="true" />
+            <element signature="e#1574#1584#0" expanded="true" />
+            <element signature="e#6551#6552#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
+            <element signature="class#13993:14408" expanded="false" />
+            <element signature="method#compare#0;class#13993:14408" expanded="false" />
+            <element signature="class#16387:16766" expanded="false" />
+            <element signature="method#compare#0;class#16387:16766" expanded="false" />
+            <element signature="e#16843#16844#0" expanded="true" />
+            <element signature="e#16872#16873#0" expanded="true" />
           </folding>
         </state>
       </provider>
