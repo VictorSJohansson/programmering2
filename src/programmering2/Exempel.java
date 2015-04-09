@@ -1,6 +1,7 @@
 package programmering2;
 
 import javax.swing.*;
+import javax.swing.UIManager;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -120,302 +121,170 @@ class Exempel extends JFrame {
     public void addValuable() {
 
         if (type.equals("Aktie")) {
-            StockPanel sP = new StockPanel();
+            stockPanel();
         } else if (type.equals("Smycke")) {
-            JeweleryPanel jP = new JeweleryPanel();
+            jeweleryPanel();
         } else if (type.equals("Apparat")) {
-            ApparatusPanel aP = new ApparatusPanel();
+            apparatusPanel();
         }
     }
+    
 
     /* ------------- JewelleryPanel --------------------*/
 
-    class JeweleryPanel implements ActionListener {
-        private JFrame frame = new JFrame();
-        private JFrame faulty = new JFrame();
-        private JTextField nameTxtField = new JTextField(8);
-        private JTextField rocksTxtField = new JTextField(4);
-        private JCheckBox goldCheckbox = new JCheckBox();
-        private JButton ok = new JButton("OK");
-        private JButton cancel = new JButton("Cancel");
-        private JButton okClose = new JButton("OK");
-
-
-        public JeweleryPanel() {
-
-            JPanel namePanel = new JPanel();
-            JLabel nameLabel = new JLabel("Namn:");
-            namePanel.add(nameLabel);
-            namePanel.add(nameTxtField);
-
-            JPanel rocksPanel = new JPanel();
-            JLabel rocksLabel = new JLabel("Stenar");
-            rocksPanel.add(rocksLabel);
-            rocksPanel.add(rocksTxtField);
-
-            JPanel goldPanel = new JPanel();
-            JLabel goldLabel = new JLabel("Av guld");
-            goldPanel.add(goldLabel);
-            goldPanel.add(goldCheckbox);
-
-            GridLayout grid = new GridLayout(4, 1);
-            frame.setLayout(grid);
-            frame.add(namePanel);
-            frame.add(rocksPanel);
-            frame.add(goldPanel);
-
-            JPanel btnPanel = new JPanel();
-            ok.addActionListener(this);
-            cancel.addActionListener(this);
-            btnPanel.add(ok);
-            btnPanel.add(cancel);
-            frame.add(btnPanel);
-
-            frame.setSize(200, 150);
-            frame.setVisible(true);
-        }
-
-        public void addJewelery() {
-
-            if (nameTxtField.getText() != null && isInteger(rocksTxtField.getText())) {
-                Valuable k = new Jewelery(nameTxtField.getText(), Integer.parseInt(rocksTxtField.getText()), goldCheckbox.isSelected());
-                valuables.add(k);
-                frame.dispose();
-            } else {
-
-                JLabel errorMsg = new JLabel("Felaktig inmatning");
-
-                GridLayout grid = new GridLayout(2, 1);
-                faulty.setLayout(grid);
-                JPanel top = new JPanel();
-                top.add(errorMsg);
-                JPanel bottom = new JPanel();
-                bottom.add(okClose);
-                okClose.addActionListener(this);
-                faulty.add(top);
-                faulty.add(bottom);
-                faulty.setSize(200, 200);
-                faulty.setVisible(true);
-            }
-        }
-
-        public void goBack() {
-            frame.dispose();
-        }
-
-        public void actionPerformed(ActionEvent event) {
-
-            if (event.getSource() == ok) {
-                addJewelery();
-            } else if (event.getSource() == cancel) {
-                goBack();
-            } else if (event.getSource() == okClose) {
-                faulty.dispose();
-            }
-        }
+        public void jeweleryPanel() {
+        	boolean isValid=false;
+        	String name=null;
+        	int rocks =0;
+        	boolean isGold=false;
+        	while (isValid==false){
+        		JPanel form = new JPanel();
+        		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+        	
+        		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+        		JPanel row1 = new JPanel();
+        		JTextField nfield = new JTextField(10);
+        		row1.add(new JLabel("Namn:"));
+        		row1.add(nfield);
+        		form.add(row1);
+        	
+        		JPanel row2 = new JPanel();
+        		JTextField numfield = new JTextField(10);
+        		row2.add(new JLabel("Stenar:"));
+        		row2.add(numfield);
+        		form.add(row2);
+        	
+        		JPanel row3 = new JPanel();
+        		JCheckBox cBox = new JCheckBox();
+        		row3.add(cBox);
+        		row3.add(new JLabel("Av guld:"));
+        		form.add(row3);
+        		
+        		try{
+        			int svar=JOptionPane.showConfirmDialog(null, form, "Smycke", JOptionPane.OK_CANCEL_OPTION);
+        			if (svar==JOptionPane.YES_OPTION){
+        				name = nfield.getText();
+        				rocks = Integer.parseInt(numfield.getText());
+        				isGold = cBox.isSelected();
+        				Valuable v= new Jewelery(name, rocks, isGold);
+        				valuables.add(v);
+        				break;
+        			}
+        			else break;
+        		}catch(NumberFormatException e){
+        			JOptionPane.showMessageDialog(null, "Fel inmatning", "Felmeddelande", JOptionPane.ERROR_MESSAGE);	
+        		}
+        	}
+ 
     }
 
 	/* ------------- StockPanel --------------------*/
 
 
-    class StockPanel implements ActionListener {
-        private JFrame frame = new JFrame();
-        private JFrame faulty = new JFrame();
-        private JTextField nameTxtField = new JTextField(8);
-        private JTextField quantityTxtField = new JTextField(4);
-        private JTextField priceTxtField = new JTextField(4);
-        private JButton ok = new JButton("OK");
-        private JButton cancel = new JButton("Cancel");
-        private JButton okClose = new JButton("OK");
-
-        public StockPanel() {
-
-            JPanel namePanel = new JPanel();
-            JLabel nameLabel = new JLabel("Namn:");
-            namePanel.add(nameLabel);
-            namePanel.add(nameTxtField);
-
-            JPanel quantityPanel = new JPanel();
-            JLabel quantityLabel = new JLabel("Antal:");
-            quantityPanel.add(quantityLabel);
-            quantityPanel.add(quantityTxtField);
-
-            JPanel pricePanel = new JPanel();
-            JLabel priceLabel = new JLabel("Pris:");
-            pricePanel.add(priceLabel);
-            pricePanel.add(priceTxtField);
-
-            GridLayout grid = new GridLayout(4, 1);
-            frame.setLayout(grid);
-            frame.add(namePanel);
-            frame.add(quantityPanel);
-            frame.add(pricePanel);
-
-            JPanel btnPanel = new JPanel();
-            ok.addActionListener(this);
-            cancel.addActionListener(this);
-            btnPanel.add(ok);
-            btnPanel.add(cancel);
-            frame.add(btnPanel);
-
-            frame.setSize(200, 150);
-            frame.setVisible(true);
-        }
-
-        public void addStock() {
-
-            if (nameTxtField.getText() != null && isDouble(priceTxtField.getText())) {
-                if (isInteger(quantityTxtField.getText())) {
-                    Valuable q = new Stock(nameTxtField.getText(), Integer.parseInt(quantityTxtField.getText()), Double.parseDouble(priceTxtField.getText()));
-                    valuables.add(q);
-                    frame.dispose();
-                }
-            } else {
-
-                JLabel errorMsg = new JLabel("Felaktig inmatning");
-
-                GridLayout grid = new GridLayout(2, 1);
-                faulty.setLayout(grid);
-                JPanel top = new JPanel();
-                top.add(errorMsg);
-                JPanel bottom = new JPanel();
-                bottom.add(okClose);
-                okClose.addActionListener(this);
-                faulty.add(top);
-                faulty.add(bottom);
-                faulty.setSize(200, 200);
-                faulty.setVisible(true);
-            }
-        }
-
-        public void goBack() {
-            frame.dispose();
-        }
-
-        public void actionPerformed(ActionEvent event) {
-
-            if (event.getSource() == ok) {
-                addStock();
-            } else if (event.getSource() == cancel) {
-                goBack();
-            } else if (event.getSource() == okClose) {
-                faulty.dispose();
-            }
-        }
+    public void stockPanel() {
+        	boolean isValid=false;
+        	String name=null;
+        	int quantity =0;
+        	double price=0;
+        	while (isValid==false){
+        		JPanel form = new JPanel();
+        		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+        	
+        		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+        		JPanel row1 = new JPanel();
+        		JTextField nfield = new JTextField(10);
+        		row1.add(new JLabel("Namn:"));
+        		row1.add(nfield);
+        		form.add(row1);
+        	
+        		JPanel row2 = new JPanel();
+        		JTextField numfield = new JTextField(10);
+        		row2.add(new JLabel("Antal:"));
+        		row2.add(numfield);
+        		form.add(row2);
+        	
+        		JPanel row3 = new JPanel();
+        		JTextField pfield = new JTextField(10);
+        		row3.add(new JLabel("Kurs:"));
+        		row3.add(pfield);
+        		form.add(row3);
+        		try{
+        			int svar=JOptionPane.showConfirmDialog(null, form, "Smycke", JOptionPane.OK_CANCEL_OPTION);
+        			if (svar==JOptionPane.YES_OPTION){
+        		name = nfield.getText();
+        		quantity = Integer.parseInt(numfield.getText());
+        		price = Double.parseDouble(pfield.getText());
+        		Valuable v= new Stock(name, quantity, price);
+        		valuables.add(v);
+        		break;
+        			}
+        			else break;
+        		}catch(NumberFormatException e){
+        			JOptionPane.showMessageDialog(null, "Fel inmatning", "Felmeddelande", JOptionPane.ERROR_MESSAGE);	
+        		}
+        	}
+ 
     }
 
 	/* ------------- ApparatusPanel --------------------*/
 
-    class ApparatusPanel implements ActionListener {
-        private JFrame frame = new JFrame();
-        private JFrame faulty = new JFrame();
-        private JTextField nameTxtField = new JTextField(8);
-        private JTextField priceTxtField = new JTextField(4);
-        private JTextField wearTxtField = new JTextField(4);
-        private JButton ok = new JButton("OK");
-        private JButton cancel = new JButton("Cancel");
-        private JButton okClose = new JButton("OK");
-
-
-        public ApparatusPanel() {
-
-            JPanel namePanel = new JPanel();
-            JLabel nameLabel = new JLabel("Namn:");
-            namePanel.add(nameLabel);
-            namePanel.add(nameTxtField);
-
-            JPanel pricePanel = new JPanel();
-            JLabel priceLabel = new JLabel("Pris:");
-            pricePanel.add(priceLabel);
-            pricePanel.add(priceTxtField);
-
-            JPanel wearPanel = new JPanel();
-            JLabel wearLabel = new JLabel("Slitage:");
-            wearPanel.add(wearLabel);
-            wearPanel.add(wearTxtField);
-
-            GridLayout grid = new GridLayout(4, 1);
-            frame.setLayout(grid);
-            frame.add(namePanel);
-            frame.add(pricePanel);
-            frame.add(wearPanel);
-
-            JPanel btnPanel = new JPanel();
-            ok.addActionListener(this);
-            cancel.addActionListener(this);
-            btnPanel.add(ok);
-            btnPanel.add(cancel);
-            frame.add(btnPanel);
-
-            frame.setSize(200, 150);
-            frame.setVisible(true);
+            public void apparatusPanel() {
+            	boolean isValid=false;
+            	String name=null;
+            	int price =0;
+            	int wear=0;
+            	while (isValid==false){
+            		JPanel form = new JPanel();
+            		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+            	
+            		form.setLayout(new BoxLayout(form, BoxLayout.Y_AXIS));
+            		JPanel row1 = new JPanel();
+            		JTextField nfield = new JTextField(10);
+            		row1.add(new JLabel("Namn:"));
+            		row1.add(nfield);
+            		form.add(row1);
+            	
+            		JPanel row2 = new JPanel();
+            		JTextField pfield = new JTextField(10);
+            		row2.add(new JLabel("Pris:"));
+            		row2.add(pfield);
+            		form.add(row2);
+            	
+            		JPanel row3 = new JPanel();
+            		JTextField wfield = new JTextField(10);
+            		row3.add(new JLabel("Slitage:"));
+            		row3.add(wfield);
+            		form.add(row3);
+            		
+            		
+            		try{
+            			int svar=JOptionPane.showConfirmDialog(null, form, "Smycke", JOptionPane.OK_CANCEL_OPTION);
+            			if (svar==JOptionPane.YES_OPTION){
+            			name = nfield.getText();
+            			price = Integer.parseInt(pfield.getText());
+            				if (Integer.parseInt(wfield.getText())>=1 && Integer.parseInt(wfield.getText())<=9){
+            					wear = Integer.parseInt(wfield.getText());
+            					Valuable v= new Apparatus(name, price, wear);
+            					valuables.add(v);
+            					break;
+            				}
+            			}
+            			else if(svar==JOptionPane.CANCEL_OPTION){ 
+            				break;
+            			}
+            		else {
+            			JOptionPane.showMessageDialog(null, "Fel inmatning", "Felmeddelande", JOptionPane.ERROR_MESSAGE);
+            		}
+            		}catch(NumberFormatException e){
+            			JOptionPane.showMessageDialog(null, "Fel inmatning", "Felmeddelande", JOptionPane.ERROR_MESSAGE);	
+            		}
+            	}
         }
-
-        public void addApparatus() {
-
-            if (nameTxtField.getText() != null && isInteger(priceTxtField.getText())) {
-                if (isInteger(wearTxtField.getText())) {
-                    if (Integer.parseInt(wearTxtField.getText()) >= 1 && Integer.parseInt(wearTxtField.getText()) <= 9) {
-                        Valuable b = new Apparatus(nameTxtField.getText(), Integer.parseInt(priceTxtField.getText()), Integer.parseInt(wearTxtField.getText()));
-                        valuables.add(b);
-                        frame.dispose();
-                    }
-                }
-            } else {
-
-                JLabel errorMsg = new JLabel("Felaktig inmatning");
-
-                GridLayout grid = new GridLayout(2, 1);
-                faulty.setLayout(grid);
-                JPanel top = new JPanel();
-                top.add(errorMsg);
-                JPanel bottom = new JPanel();
-                bottom.add(okClose);
-                okClose.addActionListener(this);
-                faulty.add(top);
-                faulty.add(bottom);
-                faulty.setSize(200, 200);
-                faulty.setVisible(true);
-            }
-        }
-
-        public void goBack() {
-            frame.dispose();
-        }
-
-        public void actionPerformed(ActionEvent event) {
-
-            if (event.getSource() == ok) {
-                addApparatus();
-            } else if (event.getSource() == cancel) {
-                goBack();
-            } else if (event.getSource() == okClose) {
-                faulty.dispose();
-            }
-        }
-    }
 
 
 	
 	/*---------------INDATA KONTROLL ---------------*/
 
-    public boolean isInteger(String s) {
-        try {
-            Integer.parseInt(s);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-    public boolean isDouble(String s) {
-        try {
-            Double.parseDouble(s);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
 
     class boxListen2 implements ActionListener {
 
