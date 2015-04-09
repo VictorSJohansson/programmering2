@@ -455,7 +455,7 @@ class Exempel extends JFrame {
                     for (Valuable v : valuables) {
                         txtInfo.append(v.toString() + "\n");
                     }
-                } else {
+                } else if (showPrice.isSelected()) {
                     Collections.sort(valuables, new Comparator<Valuable>() {
                         @Override
                         public int compare(Valuable o1, Valuable o2) {
@@ -474,6 +474,11 @@ class Exempel extends JFrame {
 
 
                     });
+                    for (Valuable v : valuables) {
+                        txtInfo.append(v.toString() + "\n");
+                    }
+
+                } else {
                     for (Valuable v : valuables) {
                         txtInfo.append(v.toString() + "\n");
                     }

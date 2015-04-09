@@ -53,8 +53,8 @@
       <file leaf-file-name="Exempel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7340287">
-              <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.60104305">
+              <caret line="484" column="17" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
               <folding>
                 <element signature="e#1575#1585#0" expanded="true" />
                 <element signature="e#6552#6553#0" expanded="true" />
@@ -63,8 +63,8 @@
                 <element signature="e#9685#9686#0" expanded="true" />
                 <element signature="class#13994:14409" expanded="false" />
                 <element signature="method#compare#0;class#13994:14409" expanded="false" />
-                <element signature="e#16227#16228#0" expanded="true" />
-                <element signature="e#16256#16257#0" expanded="true" />
+                <element signature="e#16415#16416#0" expanded="true" />
+                <element signature="e#16444#16445#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -645,7 +645,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428600505265</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Ändrat namn på radioknapp (Pris -&gt; Värde)">
+      <created>1428600675646</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1428600675646</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,7 +706,8 @@
     <MESSAGE value="har fixat börskraschknappen. funkar bra för mig." />
     <MESSAGE value="SORTERING!" />
     <MESSAGE value="SORTERING! (raderat nåt litet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SORTERING! (raderat nåt litet)" />
+    <MESSAGE value="Ändrat namn på radioknapp (Pris -&gt; Värde)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ändrat namn på radioknapp (Pris -&gt; Värde)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -723,8 +730,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,8 +748,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,8 +766,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -785,8 +792,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -818,8 +825,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -851,8 +858,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -884,8 +891,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -946,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7340287">
-          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.60104305">
+          <caret line="484" column="17" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
           <folding>
             <element signature="e#1575#1585#0" expanded="true" />
             <element signature="e#6552#6553#0" expanded="true" />
@@ -956,8 +963,8 @@
             <element signature="e#9685#9686#0" expanded="true" />
             <element signature="class#13994:14409" expanded="false" />
             <element signature="method#compare#0;class#13994:14409" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="true" />
-            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#16415#16416#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
           </folding>
         </state>
       </provider>
