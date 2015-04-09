@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="259264a0-6c47-4741-8ede-de26a3fa2756" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\ApparatusPanel.java" afterPath="$PROJECT_DIR$/src/programmering2/ApparatusPanel.java" />
-      <change type="MOVED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\JeweleryPanel.java" afterPath="$PROJECT_DIR$/src/programmering2/JeweleryPanel.java" />
-      <change type="MOVED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\StockPanel.java" afterPath="$PROJECT_DIR$/src/programmering2/StockPanel.java" />
-      <change type="MOVED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\ValuableWindow.java" afterPath="$PROJECT_DIR$/src/programmering2/ValuableWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/programmering2/Exempel.java" afterPath="$PROJECT_DIR$/src/programmering2/Exempel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="programmering2.iws" />
@@ -509,7 +503,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428560904271</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="raderat värdesak">
+      <created>1428594497646</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1428594497646</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
