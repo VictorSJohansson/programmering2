@@ -10,48 +10,43 @@ import java.util.ArrayList;
 
 class Exempel extends JFrame{
 	
-	String[] types={"Smycke", "Aktie", "Apparat"};
+	private String[] types={"Smycke", "Aktie", "Apparat"};
 
-	String type=null;
-	String tempStr1=null;
-	String tempStr2=null;
+	private String type=null;
+	private String tempStr1=null;
+	private String tempStr2=null;
 	
-	JPanel btnPanel = new JPanel();
-	JPanel top = new JPanel();
-	JPanel mainRightPanel = new JPanel();
-	JPanel mainInsideRight= new JPanel();
-	JPanel mainRightBottom= new JPanel();
-	JPanel mainBottom = new JPanel();
+	private JPanel btnPanel = new JPanel();
+	private JPanel top = new JPanel();
+	private JPanel mainRightPanel = new JPanel();
+	private JPanel mainInsideRight= new JPanel();
+	private JPanel mainRightBottom= new JPanel();
+	private JPanel mainBottom = new JPanel();
 
-	JLabel str = new JLabel();
-	JLabel label1 = new JLabel("Nytt:");
+	private JLabel str = new JLabel();
+	private JLabel label1 = new JLabel("Nytt:");
 	
-	JLabel str2 = new JLabel();
-	JLabel test= new JLabel();
-	JLabel chosenLabel= new JLabel("Inget valt");
-	JLabel sort = new JLabel("Sortering");
+	private JLabel str2 = new JLabel();
+	private JLabel test= new JLabel();
+	private JLabel chosenLabel= new JLabel("Inget valt");
+	private JLabel sort = new JLabel("Sortering");
 	
-	JTextArea txtInfo = new JTextArea(30,25);
+	private JTextArea txtInfo = new JTextArea(30,25);
 	
-	JCheckBox checkbox= new JCheckBox();
+	private JCheckBox checkbox= new JCheckBox();
 
+	private JButton show = new JButton("Visa");
+	private JButton crash= new JButton("Börskrasch");
 	
-	JButton show = new JButton("Visa");
-	JButton crash= new JButton("Börskrasch");
-	
-	ButtonGroup group = new ButtonGroup();
-	JRadioButton showName = new JRadioButton("Namn");
-	JRadioButton showPrice = new JRadioButton("Pris");
-	JButton ok= new JButton("OK");
-	JButton ok2= new JButton("OK");
-	JButton cancel = new JButton("Cancel");
-	
-	Jewelery j;
-	Stock s;
-	Apparatus a;
-	
-	ArrayList<Valuable> valuables= new ArrayList<Valuable>();
-	JComboBox box = new JComboBox<String>(types);
+	private ButtonGroup group = new ButtonGroup();
+	private JRadioButton showName = new JRadioButton("Namn");
+	private JRadioButton showPrice = new JRadioButton("Pris");
+	private JButton ok= new JButton("OK");
+	private JButton ok2= new JButton("OK");
+	private JButton cancel = new JButton("Cancel");
+
+	private ArrayList<Valuable> valuables= new ArrayList<Valuable>();
+	private JComboBox box = new JComboBox<String>(types);
 	
 
 	
@@ -120,15 +115,15 @@ class Exempel extends JFrame{
 	}
 	
 	class JeweleryPanel implements ActionListener{
-		JFrame frame = new JFrame();
-		JFrame faulty = new JFrame();
-		JPanel panel = new JPanel();
-		JTextField nameTxtField = new JTextField(8);
-		JTextField rocksTxtField = new JTextField(4);
-		JCheckBox goldCheckbox = new JCheckBox();
-		JButton ok= new JButton("OK");
-		JButton cancel = new JButton("Cancel");
-		JButton okClose = new JButton("OK");
+		private JFrame frame = new JFrame();
+		private JFrame faulty = new JFrame();
+		private JPanel panel = new JPanel();
+		private JTextField nameTxtField = new JTextField(8);
+		private JTextField rocksTxtField = new JTextField(4);
+		private JCheckBox goldCheckbox = new JCheckBox();
+		private JButton ok= new JButton("OK");
+		private JButton cancel = new JButton("Cancel");
+		private JButton okClose = new JButton("OK");
 
 		
 		//Jewelery j = new Jewelery("a", 1, false);
@@ -215,15 +210,15 @@ class Exempel extends JFrame{
 	/* ------------- StockPanel --------------------*/
 	
 	class StockPanel implements ActionListener{
-		JFrame frame = new JFrame();
-		JFrame faulty = new JFrame();
-		JPanel panel = new JPanel();
-		JTextField nameTxtField = new JTextField(8);
-		JTextField quantityTxtField = new JTextField(4);
-		JTextField priceTxtField = new JTextField(4);
-		JButton ok= new JButton("OK");
-		JButton cancel = new JButton("Cancel");
-		JButton okClose = new JButton("OK");
+		private JFrame frame = new JFrame();
+		private JFrame faulty = new JFrame();
+		private JPanel panel = new JPanel();
+		private JTextField nameTxtField = new JTextField(8);
+		private JTextField quantityTxtField = new JTextField(4);
+		private JTextField priceTxtField = new JTextField(4);
+		private JButton ok= new JButton("OK");
+		private JButton cancel = new JButton("Cancel");
+		private JButton okClose = new JButton("OK");
 
 		
 		//Jewelery j = new Jewelery("a", 1, false);
@@ -313,15 +308,15 @@ class Exempel extends JFrame{
 	/* ------------- ApparatusPanel --------------------*/
 	
 	class ApparatusPanel implements ActionListener{
-		JFrame frame = new JFrame();
-		JFrame faulty = new JFrame();
-		JPanel panel = new JPanel();
-		JTextField nameTxtField = new JTextField(8);
-		JTextField priceTxtField = new JTextField(4);
-		JTextField wearTxtField = new JTextField(4);
-		JButton ok= new JButton("OK");
-		JButton cancel = new JButton("Cancel");
-		JButton okClose = new JButton("OK");
+		private JFrame frame = new JFrame();
+		private JFrame faulty = new JFrame();
+		private JPanel panel = new JPanel();
+		private JTextField nameTxtField = new JTextField(8);
+		private JTextField priceTxtField = new JTextField(4);
+		private JTextField wearTxtField = new JTextField(4);
+		private JButton ok= new JButton("OK");
+		private JButton cancel = new JButton("Cancel");
+		private JButton okClose = new JButton("OK");
 
 		
 		public ApparatusPanel(){
