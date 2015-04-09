@@ -13,27 +13,17 @@ class Exempel extends JFrame {
     private String[] types = {"Smycke", "Aktie", "Apparat"};
 
     private String type = null;
-    private String tempStr1 = null;
-    private String tempStr2 = null;
 
-    private JPanel btnPanel = new JPanel();
     private JPanel top = new JPanel();
     private JPanel mainRightPanel = new JPanel();
     private JPanel mainInsideRight = new JPanel();
     private JPanel mainRightBottom = new JPanel();
     private JPanel mainBottom = new JPanel();
 
-    private JLabel str = new JLabel();
     private JLabel label1 = new JLabel("Nytt:");
-
-    private JLabel str2 = new JLabel();
-    private JLabel test = new JLabel();
-    private JLabel chosenLabel = new JLabel("Inget valt");
     private JLabel sort = new JLabel("Sortering");
 
     private JTextArea txtInfo = new JTextArea(30, 25);
-
-    private JCheckBox checkbox = new JCheckBox();
 
     private JButton show = new JButton("Visa");
     private JButton crash = new JButton("Börskrasch");
@@ -42,8 +32,6 @@ class Exempel extends JFrame {
     private JRadioButton showName = new JRadioButton("Namn");
     private JRadioButton showPrice = new JRadioButton("Värde");
     private JButton ok = new JButton("OK");
-    private JButton ok2 = new JButton("OK");
-    private JButton cancel = new JButton("Cancel");
 
     private ArrayList<Valuable> valuables = new ArrayList<Valuable>();
     private JComboBox box = new JComboBox<String>(types);
@@ -122,7 +110,7 @@ class Exempel extends JFrame {
 
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(400, 400);
         setVisible(true);
         setLocation(700, 300);
     }
@@ -144,7 +132,6 @@ class Exempel extends JFrame {
     class JeweleryPanel implements ActionListener {
         private JFrame frame = new JFrame();
         private JFrame faulty = new JFrame();
-        private JPanel panel = new JPanel();
         private JTextField nameTxtField = new JTextField(8);
         private JTextField rocksTxtField = new JTextField(4);
         private JCheckBox goldCheckbox = new JCheckBox();
@@ -233,7 +220,6 @@ class Exempel extends JFrame {
     class StockPanel implements ActionListener {
         private JFrame frame = new JFrame();
         private JFrame faulty = new JFrame();
-        private JPanel panel = new JPanel();
         private JTextField nameTxtField = new JTextField(8);
         private JTextField quantityTxtField = new JTextField(4);
         private JTextField priceTxtField = new JTextField(4);
@@ -322,7 +308,6 @@ class Exempel extends JFrame {
     class ApparatusPanel implements ActionListener {
         private JFrame frame = new JFrame();
         private JFrame faulty = new JFrame();
-        private JPanel panel = new JPanel();
         private JTextField nameTxtField = new JTextField(8);
         private JTextField priceTxtField = new JTextField(4);
         private JTextField wearTxtField = new JTextField(4);
