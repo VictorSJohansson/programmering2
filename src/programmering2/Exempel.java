@@ -23,7 +23,8 @@ class Exempel extends JFrame {
     private JLabel label1 = new JLabel("Nytt:");
     private JLabel sort = new JLabel("Sortering");
 
-    private JTextArea txtInfo = new JTextArea(30, 25);
+    private JTextArea txtInfo = new JTextArea(14, 30);
+    private JScrollPane scroll = new JScrollPane(txtInfo);
 
     private JButton show = new JButton("Visa");
     private JButton crash = new JButton("Börskrasch");
@@ -73,7 +74,7 @@ class Exempel extends JFrame {
         BorderLayout border = new BorderLayout();
         setLayout(border);
         add(top, BorderLayout.WEST);
-        top.add(txtInfo);
+        top.add(scroll);
 
 		/*Välj sortering */
 
@@ -110,7 +111,7 @@ class Exempel extends JFrame {
 
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(400, 400);
+        setSize(470, 300);
         setVisible(true);
         setLocation(700, 300);
     }
