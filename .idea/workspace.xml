@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="259264a0-6c47-4741-8ede-de26a3fa2756" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\programmering2\ApparatusPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\programmering2\JeweleryPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\programmering2\StockPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\andreassavva\Documents\GitHub\programmering2\src\programmering2\ValuableWindow.java" afterPath="" />
+    <list default="true" id="259264a0-6c47-4741-8ede-de26a3fa2756" name="Default" comment="raderat klasserna.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/programmering2/Exempel.java" afterPath="$PROJECT_DIR$/src/programmering2/Exempel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="programmering2.iws" />
@@ -51,11 +48,14 @@
       <file leaf-file-name="Exempel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56480217">
-              <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.556797">
+              <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
               <folding>
+                <element signature="e#1515#1525#0" expanded="true" />
                 <element signature="e#6522#6523#0" expanded="true" />
                 <element signature="e#6561#6562#0" expanded="true" />
+                <element signature="e#14542#14543#0" expanded="true" />
+                <element signature="e#14571#14572#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -479,7 +479,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428594546374</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="raderat klasserna.">
+      <created>1428595435787</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1428595435787</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -488,13 +494,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11111111" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11111111" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -529,7 +535,8 @@
     <MESSAGE value="Klara med Del 1! Kolla gärna för fel eller förbättringar." />
     <MESSAGE value="raderat värdesak" />
     <MESSAGE value="la till objekt och raderar listan varje gång man klickar på &quot;visa&quot; innan det skriver ut listan." />
-    <option name="LAST_COMMIT_MESSAGE" value="la till objekt och raderar listan varje gång man klickar på &quot;visa&quot; innan det skriver ut listan." />
+    <MESSAGE value="raderat klasserna." />
+    <option name="LAST_COMMIT_MESSAGE" value="raderat klasserna." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -545,8 +552,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,8 +566,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,8 +580,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,8 +602,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,8 +631,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -638,8 +660,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -664,8 +689,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,11 +738,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/programmering2/Exempel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56480217">
-          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.556797">
+          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
           <folding>
+            <element signature="e#1515#1525#0" expanded="true" />
             <element signature="e#6522#6523#0" expanded="true" />
             <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#14542#14543#0" expanded="true" />
+            <element signature="e#14571#14572#0" expanded="true" />
           </folding>
         </state>
       </provider>

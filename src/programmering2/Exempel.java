@@ -461,6 +461,5 @@ class Exempel extends JFrame {
 
     public static void main(String[] args) {
         new Exempel();
-
     }
 }
