@@ -411,6 +411,8 @@ class Exempel extends JFrame {
             }
         }
     }
+
+
 	
 	/*---------------INDATA KONTROLL ---------------*/
 
