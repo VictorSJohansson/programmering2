@@ -40,7 +40,7 @@ class Exempel extends JFrame {
 
     private ButtonGroup group = new ButtonGroup();
     private JRadioButton showName = new JRadioButton("Namn");
-    private JRadioButton showPrice = new JRadioButton("Pris");
+    private JRadioButton showPrice = new JRadioButton("Värde");
     private JButton ok = new JButton("OK");
     private JButton ok2 = new JButton("OK");
     private JButton cancel = new JButton("Cancel");
