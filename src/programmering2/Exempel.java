@@ -130,7 +130,6 @@ class Exempel extends JFrame {
         if (type.equals("Aktie")) {
             StockPanel sP = new StockPanel();
         } else if (type.equals("Smycke")) {
-
             JeweleryPanel jP = new JeweleryPanel();
         } else if (type.equals("Apparat")) {
             ApparatusPanel aP = new ApparatusPanel();
@@ -150,84 +149,89 @@ class Exempel extends JFrame {
         private JButton cancel = new JButton("Cancel");
         private JButton okClose = new JButton("OK");
 
+		
+		public JeweleryPanel(){
 
-        //Jewelery j = new Jewelery("a", 1, false);
+			JPanel namePanel = new JPanel();
+			JLabel nameLabel = new JLabel("Namn:");
+			namePanel.add(nameLabel);
+			namePanel.add(nameTxtField);
+			
+			JPanel rocksPanel = new JPanel();
+			JLabel rocksLabel = new JLabel("Stenar");
+			rocksPanel.add(rocksLabel);
+			rocksPanel.add(rocksTxtField);
+			
+			JPanel goldPanel = new JPanel();
+			JLabel goldLabel = new JLabel("Av guld");
+			goldPanel.add(goldLabel);
+			goldPanel.add(goldCheckbox);
+			
+			GridLayout grid = new GridLayout(4, 1);
+			frame.setLayout(grid);
+			frame.add(namePanel);
+			frame.add(rocksPanel);
+			frame.add(goldPanel);
+			
+			JPanel btnPanel = new JPanel();
+			ok.addActionListener(this);
+			cancel.addActionListener(this);
+			btnPanel.add(ok);
+			btnPanel.add(cancel);
+			frame.add(btnPanel);
 
-        public JeweleryPanel() {
+			frame.setSize(200, 150);
+			frame.setVisible(true);	
+		}
 
-            JPanel namePanel = new JPanel();
-            JLabel nameLabel = new JLabel("Namn:");
-            namePanel.add(nameLabel);
-            namePanel.add(nameTxtField);
+		public void addJewelery(){
+			
+			if (nameTxtField.getText()!=null && isInteger(rocksTxtField.getText())){
+				Valuable k = new Jewelery(nameTxtField.getText(), Integer.parseInt(rocksTxtField.getText()), goldCheckbox.isSelected());
+				valuables.add(k);
+				frame.dispose();
+			}
+			
+			else {
+				
+				JLabel errorMsg = new JLabel("Felaktig inmatning");
+				
+				GridLayout grid = new GridLayout(2, 1);
+				faulty.setLayout(grid);
+				JPanel top = new JPanel();
+				top.add(errorMsg);
+				JPanel bottom = new JPanel();
+				bottom.add(okClose);
+				okClose.addActionListener(this);
+				faulty.add(top);
+				faulty.add(bottom);
+				faulty.setSize(200, 200);
+				faulty.setVisible(true);	
+			}
+		}
+		
+		public void goBack(){
+			frame.dispose();
+		}
+		
+		public void actionPerformed(ActionEvent event){
 
-            JPanel rocksPanel = new JPanel();
-            JLabel rocksLabel = new JLabel("Stenar");
-            rocksPanel.add(rocksLabel);
-            rocksPanel.add(rocksTxtField);
+				if(event.getSource() == ok){
+					addJewelery();
+				}
+				
+				else if(event.getSource() == cancel){
+					goBack();
+				}
+				
+				else if (event.getSource() == okClose){
+					faulty.dispose();
+				}
+			}
+	}
 
-            JPanel goldPanel = new JPanel();
-            JLabel goldLabel = new JLabel("Av guld");
-            goldPanel.add(goldLabel);
-            goldPanel.add(goldCheckbox);
-
-            GridLayout grid = new GridLayout(4, 1);
-            frame.setLayout(grid);
-            frame.add(namePanel);
-            frame.add(rocksPanel);
-            frame.add(goldPanel);
-
-            JPanel btnPanel = new JPanel();
-            ok.addActionListener(this);
-            cancel.addActionListener(this);
-            btnPanel.add(ok);
-            btnPanel.add(cancel);
-            frame.add(btnPanel);
-
-            frame.setSize(400, 300);
-            frame.setVisible(true);
-            frame.setLocation(700, 300);
-        }
-
-        public void addJewelery() {
-
-            if (nameTxtField.getText() != null && isInteger(rocksTxtField.getText())) {
-                Jewelery k = new Jewelery(nameTxtField.getText(), Integer.parseInt(rocksTxtField.getText()), goldCheckbox.isSelected());
-                valuables.add(k);
-                frame.dispose();
-            } else {
-
-                JLabel errorMsg = new JLabel("Felaktig inmatning");
-
-                GridLayout grid = new GridLayout(2, 1);
-                faulty.setLayout(grid);
-                JPanel top = new JPanel();
-                top.add(errorMsg);
-                JPanel bottom = new JPanel();
-                bottom.add(okClose);
-                okClose.addActionListener(this);
-                faulty.add(top);
-                faulty.add(bottom);
-                faulty.setSize(200, 200);
-                faulty.setVisible(true);
-            }
-        }
-
-        public void goBack() {
-            frame.dispose();
-        }
-
-        public void actionPerformed(ActionEvent event) {
-
-            if (event.getSource() == ok) {
-                addJewelery();
-            } else if (event.getSource() == cancel) {
-                goBack();
-            } else if (event.getSource() == okClose) {
-                faulty.dispose();
-            }
-        }
-    }
 	/* ------------- StockPanel --------------------*/
+
 
     class StockPanel implements ActionListener {
         private JFrame frame = new JFrame();
@@ -239,86 +243,88 @@ class Exempel extends JFrame {
         private JButton ok = new JButton("OK");
         private JButton cancel = new JButton("Cancel");
         private JButton okClose = new JButton("OK");
+		
+		public StockPanel(){
 
+			JPanel namePanel = new JPanel();
+			JLabel nameLabel = new JLabel("Namn:");
+			namePanel.add(nameLabel);
+			namePanel.add(nameTxtField);
+			
+			JPanel quantityPanel = new JPanel();
+			JLabel quantityLabel = new JLabel("Antal:");
+			quantityPanel.add(quantityLabel);
+			quantityPanel.add(quantityTxtField);
+			
+			JPanel pricePanel = new JPanel();
+			JLabel priceLabel = new JLabel("Pris:");
+			pricePanel.add(priceLabel);
+			pricePanel.add(priceTxtField);
+			
+			GridLayout grid = new GridLayout(4, 1);
+			frame.setLayout(grid);
+			frame.add(namePanel);
+			frame.add(quantityPanel);
+			frame.add(pricePanel);
+			
+			JPanel btnPanel = new JPanel();
+			ok.addActionListener(this);
+			cancel.addActionListener(this);
+			btnPanel.add(ok);
+			btnPanel.add(cancel);
+			frame.add(btnPanel);
 
-        //Jewelery j = new Jewelery("a", 1, false);
+			frame.setSize(200, 150);
+			frame.setVisible(true);	
+		}
+	
+		public void addStock(){
+			
+			if (nameTxtField.getText()!=null && isDouble(priceTxtField.getText())){
+				if (isInteger(quantityTxtField.getText())){
+					Valuable q = new Stock(nameTxtField.getText(), Integer.parseInt(quantityTxtField.getText()), Double.parseDouble(priceTxtField.getText()));
+					valuables.add(q);
+					frame.dispose();
+					}
+			}
+			
+			else {
+				
+				JLabel errorMsg = new JLabel("Felaktig inmatning");
+				
+				GridLayout grid = new GridLayout(2, 1);
+				faulty.setLayout(grid);
+				JPanel top = new JPanel();
+				top.add(errorMsg);
+				JPanel bottom = new JPanel();
+				bottom.add(okClose);
+				okClose.addActionListener(this);
+				faulty.add(top);
+				faulty.add(bottom);
+				faulty.setSize(200, 200);
+				faulty.setVisible(true);	
+			}
+		}
+		
+		public void goBack(){
+			frame.dispose();
+		}
+		
+		public void actionPerformed(ActionEvent event){
 
-        public StockPanel() {
-
-            JPanel namePanel = new JPanel();
-            JLabel nameLabel = new JLabel("Namn:");
-            namePanel.add(nameLabel);
-            namePanel.add(nameTxtField);
-
-            JPanel quantityPanel = new JPanel();
-            JLabel quantityLabel = new JLabel("Antal:");
-            quantityPanel.add(quantityLabel);
-            quantityPanel.add(quantityTxtField);
-
-            JPanel pricePanel = new JPanel();
-            JLabel priceLabel = new JLabel("Pris:");
-            pricePanel.add(priceLabel);
-            pricePanel.add(priceTxtField);
-
-            GridLayout grid = new GridLayout(4, 1);
-            frame.setLayout(grid);
-            frame.add(namePanel);
-            frame.add(quantityPanel);
-            frame.add(pricePanel);
-
-            JPanel btnPanel = new JPanel();
-            ok.addActionListener(this);
-            cancel.addActionListener(this);
-            btnPanel.add(ok);
-            btnPanel.add(cancel);
-            frame.add(btnPanel);
-
-            frame.setSize(400, 300);
-            frame.setVisible(true);
-            frame.setLocation(700, 300);
-        }
-
-        public void addStock() {
-
-            if (nameTxtField.getText() != null && isInteger(priceTxtField.getText())) {
-                if (isInteger(quantityTxtField.getText())) {
-                    Stock q = new Stock(nameTxtField.getText(), Integer.parseInt(quantityTxtField.getText()), Integer.parseInt(priceTxtField.getText()));
-                    valuables.add(q);
-                    frame.dispose();
-                }
-            } else {
-
-                JLabel errorMsg = new JLabel("Felaktig inmatning");
-
-                GridLayout grid = new GridLayout(2, 1);
-                faulty.setLayout(grid);
-                JPanel top = new JPanel();
-                top.add(errorMsg);
-                JPanel bottom = new JPanel();
-                bottom.add(okClose);
-                okClose.addActionListener(this);
-                faulty.add(top);
-                faulty.add(bottom);
-                faulty.setSize(200, 200);
-                faulty.setVisible(true);
-            }
-        }
-
-        public void goBack() {
-            frame.dispose();
-        }
-
-        public void actionPerformed(ActionEvent event) {
-
-            if (event.getSource() == ok) {
-                addStock();
-            } else if (event.getSource() == cancel) {
-                goBack();
-            } else if (event.getSource() == okClose) {
-                faulty.dispose();
-            }
-        }
-    }
+				if(event.getSource() == ok){
+					addStock();
+				}
+				
+				else if(event.getSource() == cancel){
+					goBack();
+				}
+				
+				else if (event.getSource() == okClose){
+					faulty.dispose();
+				}
+			}
+	}
 	
 	/* ------------- ApparatusPanel --------------------*/
 
@@ -364,9 +370,8 @@ class Exempel extends JFrame {
             btnPanel.add(cancel);
             frame.add(btnPanel);
 
-            frame.setSize(400, 300);
-            frame.setVisible(true);
-            frame.setLocation(700, 300);
+            frame.setSize(200, 150);
+			frame.setVisible(true);
         }
 
         public void addApparatus() {
@@ -374,7 +379,7 @@ class Exempel extends JFrame {
             if (nameTxtField.getText() != null && isInteger(priceTxtField.getText())) {
                 if (isInteger(wearTxtField.getText())) {
                     if (Integer.parseInt(wearTxtField.getText()) >= 1 && Integer.parseInt(wearTxtField.getText()) <= 9) {
-                        Apparatus b = new Apparatus(nameTxtField.getText(), Integer.parseInt(priceTxtField.getText()), Integer.parseInt(wearTxtField.getText()));
+                        Valuable b = new Apparatus(nameTxtField.getText(), Integer.parseInt(priceTxtField.getText()), Integer.parseInt(wearTxtField.getText()));
                         valuables.add(b);
                         frame.dispose();
                     }
