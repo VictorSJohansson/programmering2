@@ -10,11 +10,11 @@ import javax.swing.JFrame;
 
 import programmering2.Exempel.boxListen2;
 
-public class StocerkPanel{
+public class StockPanel {
 	
 	JPanel panel = new JPanel();
 	
-	public StockerPanel(){
+	public StockPanel(){
 		
 		JFrame frame = new JFrame();
 		
@@ -42,10 +42,10 @@ public class StocerkPanel{
 		frame.add(namePanel);
 		frame.add(quantityPanel);
 		frame.add(pricePanel);
-		
+
 
 		frame.setSize(200, 150);
-		frame.setVisible(true);	
+		frame.setVisible(true);
 	}
 	
 	public JPanel getPanel(){

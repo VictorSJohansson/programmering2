@@ -9,7 +9,7 @@ import java.awt.event.*;
 
 import programmering2.Exempel.boxListen2;
 
-public class JeweerleryPanel implements ActionListener{
+public class JeweleryPanel implements ActionListener{
 	JFrame frame = new JFrame();
 	JFrame faulty = new JFrame();
 	JPanel panel = new JPanel();
@@ -23,7 +23,7 @@ public class JeweerleryPanel implements ActionListener{
 	
 	Jewelery j = new Jewelery("a", 1, false);
 	
-	public JewelereryPanel(){
+	public JeweleryPanel(){
 
 		JPanel namePanel = new JPanel();
 		JLabel nameLabel = new JLabel("Namn:");
@@ -54,7 +54,7 @@ public class JeweerleryPanel implements ActionListener{
 		frame.add(btnPanel);
 
 		frame.setSize(200, 150);
-		frame.setVisible(true);	
+		frame.setVisible(true);
 	}
 	
 	public JPanel getPanel(){

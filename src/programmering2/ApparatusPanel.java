@@ -10,11 +10,11 @@ import javax.swing.JFrame;
 
 import programmering2.Exempel.boxListen2;
 
-public class ApparaertusPanel{
+public class ApparatusPanel{
 	
 	JPanel panel = new JPanel();
 	
-	public ApparaterusPanel(){
+	public ApparatusPanel(){
 		
 		
 		
