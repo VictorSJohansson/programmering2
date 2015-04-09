@@ -508,26 +508,6 @@ class Exempel extends JFrame {
         }
     }
 
-    class SortingRadioButtons implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-            if (showName.isSelected()) {
-                Collections.sort(valuables, new Comparator<Valuable>() {
-                    @Override
-                    public int compare(Valuable o1, Valuable o2) {
-
-                        return o1.getName().compareTo(o2.getName());
-
-                    }
-
-                    @Override
-                    public boolean equals(Object obj) {
-                        return false;
-                    }
-                });
-            }
-        }
-    }
-
     public static void main(String[] args) {
         new Exempel();
     }
