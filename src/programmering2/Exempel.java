@@ -259,7 +259,7 @@ class Exempel extends JFrame {
             		
             		
             		try{
-            			int svar=JOptionPane.showConfirmDialog(null, form, "Smycke", JOptionPane.OK_CANCEL_OPTION);
+            			int svar=JOptionPane.showConfirmDialog(null, form, "Apparat", JOptionPane.OK_CANCEL_OPTION);
             			if (svar==JOptionPane.YES_OPTION){
             			name = nfield.getText();
             			price = Integer.parseInt(pfield.getText());
