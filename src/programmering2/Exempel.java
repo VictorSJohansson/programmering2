@@ -2,6 +2,7 @@ package programmering2;
 
 import javax.swing.*;
 import javax.swing.UIManager;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,6 +24,7 @@ class Exempel extends JFrame {
 
     private JLabel label1 = new JLabel("Nytt:");
     private JLabel sort = new JLabel("Sortering");
+    private JLabel title = new JLabel("Värdesaker");
 
     private JTextArea txtInfo = new JTextArea(14, 30);
     private JScrollPane scroll = new JScrollPane(txtInfo);
@@ -40,6 +42,7 @@ class Exempel extends JFrame {
 
 
     Exempel() {
+        super("Sakregister");
         doExempel();
         addItems();
     }
@@ -72,30 +75,28 @@ class Exempel extends JFrame {
 
     public void doExempel() {
 
+
+
         BorderLayout border = new BorderLayout();
         setLayout(border);
-        add(top, BorderLayout.WEST);
+        add(top, BorderLayout.CENTER);
+        top.add(title);
         top.add(scroll);
 
 		/*Välj sortering */
 
-        add(mainRightPanel, BorderLayout.EAST);
+        add(mainInsideRight, BorderLayout.EAST);
 
-        GridLayout layout = new GridLayout(3, 1);
+        GridLayout layout = new GridLayout(8, 1);
         mainInsideRight.setLayout(layout);
 
-        mainRightPanel.add(mainInsideRight);
-
         mainInsideRight.add(sort);
-
         mainInsideRight.add(showName);
-
+        mainInsideRight.add(showPrice);
         mainInsideRight.add(mainRightBottom, BorderLayout.SOUTH);
-
 
         group.add(showName);
         group.add(showPrice);
-        mainRightBottom.add(showPrice);
 
 		/*Lägg till ny värdesak*/
 
@@ -112,7 +113,7 @@ class Exempel extends JFrame {
 
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(470, 300);
+        setSize(430, 300);
         setVisible(true);
         setLocation(700, 300);
     }
