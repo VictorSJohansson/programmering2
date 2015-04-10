@@ -15,7 +15,6 @@ class Exempel extends JFrame {
     private String type = null;
 
     private JPanel top = new JPanel();
-    private JPanel mainRightPanel = new JPanel();
     private JPanel mainInsideRight = new JPanel();
     private JPanel mainRightBottom = new JPanel();
     private JPanel mainBottom = new JPanel();
