@@ -263,7 +263,7 @@ class Exempel extends JFrame {
             			if (svar==JOptionPane.YES_OPTION){
             			name = nfield.getText();
             			price = Integer.parseInt(pfield.getText());
-            				if (Integer.parseInt(wfield.getText())>=1 && Integer.parseInt(wfield.getText())<=9){
+            				if (Integer.parseInt(wfield.getText())>=1 && Integer.parseInt(wfield.getText())<=10){
             					wear = Integer.parseInt(wfield.getText());
             					Valuable v= new Apparatus(name, price, wear);
             					valuables.add(v);
