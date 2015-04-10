@@ -210,7 +210,7 @@ class Exempel extends JFrame {
         		row3.add(pfield);
         		form.add(row3);
         		try{
-        			int svar=JOptionPane.showConfirmDialog(null, form, "Smycke", JOptionPane.OK_CANCEL_OPTION);
+        			int svar=JOptionPane.showConfirmDialog(null, form, "Aktie", JOptionPane.OK_CANCEL_OPTION);
         			if (svar==JOptionPane.YES_OPTION){
         		name = nfield.getText();
         		quantity = Integer.parseInt(numfield.getText());
@@ -349,7 +349,6 @@ class Exempel extends JFrame {
 
             if (event.getSource() == box) {
                 type = (String) box.getSelectedItem();
-                //removeAll();
                 addValuable();
             } else if (event.getSource() == ok) {
 
